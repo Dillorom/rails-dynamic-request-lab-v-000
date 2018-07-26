@@ -214,3 +214,15 @@ Processing by StudentsController#show as HTML
   [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
   [1m[35mStudent Load (0.2ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 1]]
   Rendered students/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 58ms (Views: 32.0ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/students/2" for 73.254.230.154 at 2018-07-26 21:47:38 +0000
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "students" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2018-07-26 21:47:38.202018"], ["updated_at", "2018-07-26 21:47:38.202018"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered students/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 87ms (Views: 79.7ms | ActiveRecord: 3.0ms)
